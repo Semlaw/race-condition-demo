@@ -82,19 +82,20 @@ import { getAdminLevel, getNextLevelZoom } from '../util/index';
 
 const colorList = ['#33CCCC', '#EE7600', '#FF0000'];
 /**
- * applyGetCoverageData 请求获取相应的地图数据,使用场景time、图层、地图zoom、amap 改变;
-  * getCoverageData 获取当前需要的数据;
+ * applyGetCoverageData - 请求获取相应的地图数据,使用场景time、图层、地图zoom、amap 改变;
+ * getCoverageData - 获取当前需要的数据;
  * needRequestValidate - 判断是否需要发起请求 getCoverageData函数调用;
- * getCoverageRequestParams 构造用于请求（查询）的参数;
+ * getCoverageRequestParams-  构造用于请求（查询）的参数;
  * clearOneCoveragDataModel - cancel仍在pending的请求图层被移除前调用，或者图层数据被完全初始化时调用;
  * initOneCoveragDataModel - 初始化数据模型
- * 新增coverage时调用
- * 需要重置图层数据时调用 ：time、city变化时
- * coverageDataSave 将接口返回的数据存储到本地
- * 数据返回时调用
- * applyPrepareRenderData 准备用于渲染的数据dataModel.currentUsedData，
- 通过currentUsedDataParams判断是否需要重新设置currentUsedData
-*/
+ * coverageDataSave - 将接口返回的数据存储到本地,数据请求响应时调用
+ * applyPrepareRenderData - 准备用于渲染的数据
+ *
+ */
+
+/**
+ *
+ */
 
 function defer() {
   const dfd = {};

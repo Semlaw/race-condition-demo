@@ -78,6 +78,8 @@ function defer() {
 }
 /**
  *
+ * @description 模拟数据查询接口
+ *
  * @param {*} params
  * @property {string} keyWord - 中学 高等院校 职业技术学校
  * @property {string} adminLevel - province省 city市 county县
